@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jason.flashcardapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flash Study"
+        android:textSize="60sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/setsOfCards"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:text="SETS OF CARDS"
+        android:textSize="35sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/addSet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/addSet"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:text="ADD A SET"
+        android:textSize="35sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/setsOfCards"
+        app:layout_constraintBottom_toTopOf="@+id/editSets"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <Button
+        android:id="@+id/editSets"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:textSize="35sp"
+        android:text="EDIT SETS"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/addSet"
+        app:layout_constraintBottom_toTopOf="@+id/addCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/addCard"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:textSize="35sp"
+        android:text="@string/addCard"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSets"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

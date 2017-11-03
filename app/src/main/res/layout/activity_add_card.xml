@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.jason.flashcardapp.AddCardActivity">
+
+    <TextView
+        android:id="@+id/addCardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addCard"
+        android:textSize="60sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/enterTermText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Term:\n************"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCardTitle"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:id="@+id/enterTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Term"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterTermText"
+        />
+
+    <Button
+        android:id="@+id/enterTermButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/enterTerm"
+        app:layout_constraintTop_toBottomOf="@+id/enterTermText"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/enterDefText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Definition:\n*****************"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterTerm"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Definition"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterDefText"
+        />
+</android.support.constraint.ConstraintLayout>

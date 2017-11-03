@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.jason.flashcardapp.StudyActivity">
+
+    <Button
+        android:id="@+id/indexCard"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:text="@string/term"
+        android:textSize="30dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/indexChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_definition"
+        android:background="@color/colorPrimary"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/indexCard"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="changeIndexCardDisplay"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="previous"
+        android:background="@color/colorPrimary"
+        android:id="@+id/prevCard"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/indexCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextCard"
+        android:text="next"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/indexCard"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit"
+        android:text="exit"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prevCard"
+        app:layout_constraintRight_toLeftOf="@id/indexCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editCard"
+        android:text="edit card"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nextCard"
+        app:layout_constraintLeft_toRightOf="@id/indexCard"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+</android.support.constraint.ConstraintLayout>
